@@ -19,50 +19,63 @@
 
 <body>
 
-        <div class="container" id="container" onmousemove="onMouseMove(event)" style="width: 100%; height: 100%; background-color: #000808; overflow: hidden; position: relative;">
-            <div class="switch" onclick="toggleMainPage()" style="position: absolute; top: 40px; right: 20px; z-index: 2; cursor: pointer;">
-                <svg width="32" height="32" viewBox="0 0 1024 1024" fill="#00c6c6">
-                    <path d="M512 85.333333l426.666667 426.666667-426.666667 426.666667L85.333333 512z"></path>
-                </svg>
-            </div>
-            <div class="topBox" id="topBox" style="position: absolute; top: 0; width: 100%; height: 80px; z-index: 2; transform: translateY(-80px); transition: transform 0.6s;">
-                <img src="index/topBg.png" alt="" class="topBg" style="width: 100%; height: 61px;"/>
-                <img src="index/shine.png" alt="" class="shine" style="position: absolute; top: 51px; left: 0; right: 0; width: 808px; height: 55px; margin: 0 auto;"/>
-                <div class="leftLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px; background-image: linear-gradient(to left, #b5eff6, #008f8f, #003d3d); left: 4%;"></div>
-                <div class="rightLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px; background-image: linear-gradient(to right, #b5eff6, #008f8f, #003d3d); right: 4%;"></div>
-                <div class="title" style="position: absolute; top: 16px; left: 0; right: 0; width: 100%; display: flex; align-items: center; justify-content: center;">
-                    <span style="text-align: center; font-size: 32px; font-weight: 600; background-image: linear-gradient(to right, #003d3d, #008f8f, #00cfcf, #008f8f, #003d3d); -webkit-background-clip: text; color: transparent;">可视化平台</span>
-                </div>
-            </div>
-            <div class="leftBox" id="leftBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s;">
-                <div class="item" style="width: 100%; height: 40%; padding: 20px;">
-                    <div class="border1" style="padding: 10px; background: rgba(0, 0, 0, 0.3); border-radius: 12px;">
-                        <div class="title" style="font-size: 18px; color: #00c6c6; font-weight: bold;">模块标题</div>
-                        <div class="content" style="font-size: 16px; color: #b5eff6;">自定义内容</div>
-                    </div>
-                </div>
-                <div class="item" style="width: 100%; height: 60%; padding: 20px;">
-                    <div class="border1" style="padding: 10px; background: rgba(0, 0, 0, 0.3); border-radius: 12px;">
-                        <div class="content" style="font-size: 16px; color: #b5eff6;">自定义内容</div>
-                    </div>
-                </div>
-            </div>
-            <div class="rightBox" id="rightBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s;">
-                <div class="item" style="width: 100%; height: 40%; padding: 20px;">
-                    <div class="border1" style="padding: 10px; background: rgba(0, 0, 0, 0.3); border-radius: 12px;">
-                        <div class="title" style="font-size: 18px; color: #00c6c6; font-weight: bold;">模块标题</div>
-                        <div class="content" style="font-size: 16px; color: #b5eff6;">4444</div>
-                    </div>
-                </div>
-                <div class="item" style="width: 100%; height: 60%; padding: 20px;">
-                    <div class="border1" style="padding: 10px; background: rgba(0, 0, 0, 0.3); border-radius: 12px;">
-                        <div class="content" style="font-size: 16px; color: #b5eff6;">自定义内容</div>
-                    </div>
-                </div>
-            </div>
-            <div class="tooltip" id="tooltip" style="position: absolute; padding: 10px 20px; font-size: 16px; font-weight: 600; color: #000; background-color: #ffffff; border-radius: 4px; visibility: hidden; z-index: 3;">
+    <div class="container" id="container" onmousemove="onMouseMove(event)" style="width: 100%; height: 100%; background-color: #000808; overflow: hidden; position: relative;">
+        <div class="switch" onclick="toggleMainPage()" style="position: absolute; top: 40px; right: 20px; z-index: 999; cursor: pointer;">
+            <svg width="32" height="32" viewBox="0 0 1024 1024" fill="#00c6c6">
+                <path d="M512 85.333333l426.666667 426.666667-426.666667 426.666667L85.333333 512z"></path>
+            </svg>
+        </div>
+        <div class="topBox" id="topBox" style="position: absolute; top: 0; width: 100%; height: 80px; z-index: 2; transform: translateY(-80px); transition: transform 0.6s;">
+            <img src="index/topBg.png" alt="" class="topBg" style="width: 100%; height: 61px;"/>
+            <img src="index/shine.png" alt="" class="shine" style="position: absolute; top: 51px; left: 0; right: 0; width: 808px; height: 55px; margin: 0 auto;"/>
+            <div class="leftLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px; background-image: linear-gradient(to left, #b5eff6, #008f8f, #003d3d); left: 4%;"></div>
+            <div class="rightLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px; background-image: linear-gradient(to right, #b5eff6, #008f8f, #003d3d); right: 4%;"></div>
+            <div class="title" style="position: absolute; top: 16px; left: 0; right: 0; width: 100%; display: flex; align-items: center; justify-content: center;">
+                <span style="text-align: center; font-size: 32px; font-weight: 600; background-image: linear-gradient(to right, #003d3d, #008f8f, #00cfcf, #008f8f, #003d3d); -webkit-background-clip: text; color: transparent;">中国文化与旅游</span>
             </div>
         </div>
+        <div class="leftBox" id="leftBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; left: -2%;"> <!-- 整体右移 -->
+            <div class="item" style="width: 100%; height: 40%; padding: 20px;">
+                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%; margin-left: 10px;"> <!-- 边框右移 -->
+                    <div class="title" style="font-size: 18px; color: #00ff80; font-weight: bold; text-align: center; margin-bottom: 10px;">文化遗产</div>
+                    <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
+                        中国拥有悠久的历史文化，长城、故宫和敦煌莫高窟等世界遗产以其独特的风貌吸引着全球游客。<br><br>
+                        中国文化以儒家思想为核心，同时融合了道家、佛教等哲学精髓。在每一个文化遗址中，您都能感受到中华文明的悠久与辉煌。
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="width: 100%; height: 60%; padding: 20px;">
+                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%; margin-left: 10px;"> <!-- 边框右移 -->
+                    <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
+                        近年来，中国通过“一带一路”倡议加强文化交流，推动文化输出。影视作品、非物质文化遗产的复兴，让世界更加了解中国文化。<br><br>
+                        北京的故宫、南京的中华门、洛阳的龙门石窟等历史文化名城展现了中国厚重的历史底蕴。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightBox" id="rightBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; right: 0.5%">
+            <div class="item" style="width: 100%; height: 40%; padding: 20px;">
+                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%;">
+                    <div class="title" style="font-size: 18px; color: #00ff80; font-weight: bold; text-align: center; margin-bottom: 10px;">现代发展</div>
+                    <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
+                        中国的现代化发展令人瞩目。上海的陆家嘴、深圳的科技中心，以及覆盖全国的高铁网络，展示了一个充满活力的现代中国。<br><br>
+                        游览这些现代化城市，您能看到科技与文化完美融合的魅力。
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="width: 100%; height: 60%; padding: 20px;">
+                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%;">
+                    <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
+                        从桂林的漓江到杭州的西湖，再到成都的美食文化，您将感受到自然与人文的完美结合。<br><br>
+                        中国丰富的山水美景和繁荣的现代城市共同打造了一个理想的旅游胜地。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip" id="tooltip" style="position: absolute; padding: 10px 20px; font-size: 16px; font-weight: 600; color: #000; background-color: #ffffff; border-radius: 4px; visibility: hidden; z-index: 3;">
+        </div>
+    </div>
+    
         
 
         
