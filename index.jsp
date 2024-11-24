@@ -25,15 +25,17 @@
                 <path d="M512 85.333333l426.666667 426.666667-426.666667 426.666667L85.333333 512z"></path>
             </svg>
         </div>
+        
         <div class="topBox" id="topBox" style="position: absolute; top: 0; width: 100%; height: 80px; z-index: 2; transform: translateY(-80px); transition: transform 0.6s;">
             <img src="index/topBg.png" alt="" class="topBg" style="width: 100%; height: 61px;"/>
             <img src="index/shine.png" alt="" class="shine" style="position: absolute; top: 51px; left: 0; right: 0; width: 808px; height: 55px; margin: 0 auto;"/>
-            <div class="leftLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px; background-image: linear-gradient(to left, #b5eff6, #008f8f, #003d3d); left: 4%;"></div>
-            <div class="rightLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px; background-image: linear-gradient(to right, #b5eff6, #008f8f, #003d3d); right: 4%;"></div>
+            <div class="leftLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px;"></div>
+            <div class="rightLine" style="position: absolute; top: 18px; width: 120px; height: 4px; border-radius: 2px;"></div>
             <div class="title" style="position: absolute; top: 16px; left: 0; right: 0; width: 100%; display: flex; align-items: center; justify-content: center;">
-                <span style="text-align: center; font-size: 32px; font-weight: 600; background-image: linear-gradient(to right, #003d3d, #008f8f, #00cfcf, #008f8f, #003d3d); -webkit-background-clip: text; color: transparent;">中国文化与旅游</span>
+                <span style="text-align: center; font-size: 32px; font-weight: 600; -webkit-background-clip: text; color: transparent;">中国文化与旅游</span>
             </div>
         </div>
+        
         <!-- 说明文字部分 -->
 
         <div class="leftBox" id="leftBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; left: -2%;">
