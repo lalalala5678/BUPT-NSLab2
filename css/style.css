@@ -1,0 +1,150 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #000808; /* 深色背景 */
+    overflow: hidden;
+    position: relative;
+}
+
+.switch {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.switch svg {
+    width: 32px;
+    height: 32px;
+}
+
+.switch path {
+    fill: #00c6c6;
+}
+
+.topBox {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 2; /* 提升 z-index 确保可见 */
+    transform: translateY(-80px);
+    transition: transform 0.6s;
+    background: linear-gradient(135deg, #002b4c, #004d73, #006d9a);
+    background-size: 300% 300%;
+    animation: sciFiBg 5s infinite; /* 背景动态渐变 */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.3);
+}
+
+.topBox::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 17px;
+    border: 2px solid rgba(0, 255, 255, 0.7); /* 外部边框 */
+    pointer-events: none;
+    animation: neonGlow 2s infinite alternate; /* 边框闪烁效果 */
+}
+
+.leftBox, .rightBox {
+    position: absolute;
+    top: 80px;
+    width: 30%;
+    height: calc(100% - 80px);
+    z-index: 2; /* 提升 z-index */
+    transition: transform 0.8s;
+    background: linear-gradient(135deg, #002b4c, #004d73, #006d9a);
+    background-size: 300% 300%;
+    animation: sciFiBg 5s infinite;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.leftBox {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.rightBox {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.leftBox::before, .rightBox::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 17px;
+    border: 2px solid rgba(0, 255, 255, 0.7);
+    pointer-events: none;
+    animation: neonGlow 2s infinite alternate;
+}
+
+.item {
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+}
+
+.item:last-child {
+    height: 60%;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 4px;
+    visibility: hidden;
+    z-index: 3; /* 提升层级 */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 6px;
+    border: 2px solid rgba(0, 255, 255, 0.7);
+    pointer-events: none;
+    animation: neonGlow 2s infinite alternate;
+}
+
+/* 动态背景动画 */
+@keyframes sciFiBg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 闪烁边框动画 */
+@keyframes neonGlow {
+    from {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    }
+}
