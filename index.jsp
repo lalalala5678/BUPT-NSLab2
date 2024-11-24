@@ -51,7 +51,7 @@
     <div class="item" style="width: 100%; height: 30%; padding: 20px; margin-top: 40px;"> <!-- 增加顶部间距 -->
         <div class="border1" style="padding: 20px; background: linear-gradient(135deg, rgba(0, 77, 115, 0.1), rgba(0, 207, 207, 0.7), rgba(0, 77, 115, 0.1)); background-size: 500% 500%; animation: gradientBG 4s ease infinite; border-radius: 15px; border: 2px solid rgba(98, 112, 205, 0.5); height: 100%; margin-left: 10px;"> <!-- 动态渐变透明背景 -->
             <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
-                近年来，中国通过“一带一路”倡议加强文化交流，推动文化输出。影视作品、非物质文化遗产的复兴，让世界更加了解中国文化。<br><br>
+                <br>近年来，中国通过“一带一路”倡议加强文化交流，推动文化输出。影视作品、非物质文化遗产的复兴，让世界更加了解中国文化。<br><br>
                 北京的故宫、南京的中华门、洛阳的龙门石窟等历史文化名城展现了中国厚重的历史底蕴。
             </div>
         </div>
@@ -71,7 +71,7 @@
     <div class="item" style="width: 100%; height: 30%; padding: 20px; margin-top: 40px;"> <!-- 增加顶部间距 -->
         <div class="border1" style="padding: 20px; background: linear-gradient(135deg, rgba(0, 77, 115, 0.1), rgba(0, 207, 207, 0.7), rgba(0, 77, 115, 0.1)); background-size: 500% 500%; animation: gradientBG 4s ease infinite; border-radius: 15px; border: 2px solid rgba(98, 112, 205, 0.5); height: 100%;"> <!-- 动态渐变透明背景 -->
             <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
-                从桂林的漓江到杭州的西湖，再到成都的美食文化，您将感受到自然与人文的完美结合。<br><br>
+                <br>从桂林的漓江到杭州的西湖，再到成都的美食文化，您将感受到自然与人文的完美结合。<br><br>
                 中国丰富的山水美景和繁荣的现代城市共同打造了一个理想的旅游胜地。
             </div>
         </div>
