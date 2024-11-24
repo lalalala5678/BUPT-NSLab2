@@ -177,7 +177,7 @@
 
     <!-- Footer -->
     <div class="footer">
-        <p>© 2024 云南 | 彩云之南 | <a href="index.jsp">返回首页</a></p>
+        <p>© 2024 云南 | 彩云之南 | <a href="main.jsp">返回首页</a></p>
     </div>
 </body>
 
