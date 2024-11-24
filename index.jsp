@@ -34,46 +34,50 @@
                 <span style="text-align: center; font-size: 32px; font-weight: 600; background-image: linear-gradient(to right, #003d3d, #008f8f, #00cfcf, #008f8f, #003d3d); -webkit-background-clip: text; color: transparent;">中国文化与旅游</span>
             </div>
         </div>
+        <!-- 说明文字部分 -->
 
-        <div class="leftBox" id="leftBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; left: -2%;"> <!-- 整体右移 -->
-            <div class="item" style="width: 100%; height: 40%; padding: 20px;">
-                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%; margin-left: 10px;"> <!-- 边框右移 -->
-                    <div class="title" style="font-size: 18px; color: #00ff80; font-weight: bold; text-align: center; margin-bottom: 10px;">文化遗产</div>
+        <div class="leftBox" id="leftBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; left: -2%;">
+            <div class="item" style="width: 100%; height: 30%; padding: 20px;">
+                <div class="border1" style="padding: 20px; background: linear-gradient(135deg, rgba(0, 77, 115, 0.3), rgba(0, 143, 143, 0.3), rgba(0, 207, 207, 0.3)); background-size: 300% 300%; animation: gradientBG 6s ease infinite; border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.5); height: 100%; margin-left: 10px;">
+                    <div class="title" style="font-size: 18px; color: #00ff80; font-weight: bold; text-align: center; margin-bottom: 10px;"><br>文化遗产</div>
                     <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
-                        中国拥有悠久的历史文化，长城、故宫和敦煌莫高窟等世界遗产以其独特的风貌吸引着全球游客。<br><br>
+                        <br>中国拥有悠久的历史文化，长城、故宫和敦煌莫高窟等世界遗产以其独特的风貌吸引着全球游客。<br><br>
                         中国文化以儒家思想为核心，同时融合了道家、佛教等哲学精髓。在每一个文化遗址中，您都能感受到中华文明的悠久与辉煌。
                     </div>
                 </div>
             </div>
-            <div class="item" style="width: 100%; height: 60%; padding: 20px;">
-                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%; margin-left: 10px;"> <!-- 边框右移 -->
+            <div class="item" style="width: 100%; height: 30%; padding: 20px; margin-top: 80px;">
+                <div class="border1" style="padding: 20px; background: linear-gradient(135deg, rgba(0, 77, 115, 0.3), rgba(0, 143, 143, 0.3), rgba(0, 207, 207, 0.3)); background-size: 300% 300%; animation: gradientBG 6s ease infinite; border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.5); height: 100%; margin-left: 10px;">
                     <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
-                        近年来，中国通过“一带一路”倡议加强文化交流，推动文化输出。影视作品、非物质文化遗产的复兴，让世界更加了解中国文化。<br><br>
+                        <br>近年来，中国通过“一带一路”倡议加强文化交流，推动文化输出。影视作品、非物质文化遗产的复兴，让世界更加了解中国文化。<br><br>
                         北京的故宫、南京的中华门、洛阳的龙门石窟等历史文化名城展现了中国厚重的历史底蕴。
                     </div>
                 </div>
             </div>
         </div>
-        <div class="rightBox" id="rightBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; right: 0.5%">
-            <div class="item" style="width: 100%; height: 40%; padding: 20px;">
-                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%;">
-                    <div class="title" style="font-size: 18px; color: #00ff80; font-weight: bold; text-align: center; margin-bottom: 10px;">现代发展</div>
+        <div class="rightBox" id="rightBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; right: 0.5%;">
+            <div class="item" style="width: 100%; height: 30%; padding: 20px;">
+                <div class="border1" style="padding: 20px; background: linear-gradient(135deg, rgba(0, 77, 115, 0.3), rgba(0, 143, 143, 0.3), rgba(0, 207, 207, 0.3)); background-size: 300% 300%; animation: gradientBG 6s ease infinite; border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.5); height: 100%;">
+                    <div class="title" style="font-size: 18px; color: #00ff80; font-weight: bold; text-align: center; margin-bottom: 10px;"><br>现代发展</div>
                     <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
-                        中国的现代化发展令人瞩目。上海的陆家嘴、深圳的科技中心，以及覆盖全国的高铁网络，展示了一个充满活力的现代中国。<br><br>
+                        <br>中国的现代化发展令人瞩目。上海的陆家嘴、深圳的科技中心，以及覆盖全国的高铁网络，展示了一个充满活力的现代中国。<br><br>
                         游览这些现代化城市，您能看到科技与文化完美融合的魅力。
                     </div>
                 </div>
             </div>
-            <div class="item" style="width: 100%; height: 60%; padding: 20px;">
-                <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%;">
+            <div class="item" style="width: 100%; height: 30%; padding: 20px; margin-top: 80px;">
+                <div class="border1" style="padding: 20px; background: linear-gradient(135deg, rgba(0, 77, 115, 0.3), rgba(0, 143, 143, 0.3), rgba(0, 207, 207, 0.3)); background-size: 300% 300%; animation: gradientBG 6s ease infinite; border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.5); height: 100%;">
                     <div class="content" style="font-size: 16px; color: #ccffcc; line-height: 1.8; text-align: justify;">
-                        从桂林的漓江到杭州的西湖，再到成都的美食文化，您将感受到自然与人文的完美结合。<br><br>
+                        <br>从桂林的漓江到杭州的西湖，再到成都的美食文化，您将感受到自然与人文的完美结合。<br><br>
                         中国丰富的山水美景和繁荣的现代城市共同打造了一个理想的旅游胜地。
                     </div>
                 </div>
             </div>
         </div>
         
+        
+        <!-- 说明文字部分结束 -->
+
         <div class="tooltip" id="tooltip" style="position: absolute; padding: 10px 20px; font-size: 16px; font-weight: 600; color: #000; background-color: #ffffff; border-radius: 4px; visibility: hidden; z-index: 3;">
         </div>
 
