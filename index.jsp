@@ -34,6 +34,7 @@
                 <span style="text-align: center; font-size: 32px; font-weight: 600; background-image: linear-gradient(to right, #003d3d, #008f8f, #00cfcf, #008f8f, #003d3d); -webkit-background-clip: text; color: transparent;">中国文化与旅游</span>
             </div>
         </div>
+
         <div class="leftBox" id="leftBox" style="position: absolute; top: 80px; width: 30%; height: calc(100% - 80px); z-index: 2; transition: transform 0.8s; left: -2%;"> <!-- 整体右移 -->
             <div class="item" style="width: 100%; height: 40%; padding: 20px;">
                 <div class="border1" style="padding: 20px; background: rgba(0, 128, 64, 0.3); border-radius: 12px; border: 2px solid rgba(98, 112, 205, 0.7); height: 100%; margin-left: 10px;"> <!-- 边框右移 -->
@@ -72,8 +73,17 @@
                 </div>
             </div>
         </div>
+        
         <div class="tooltip" id="tooltip" style="position: absolute; padding: 10px 20px; font-size: 16px; font-weight: 600; color: #000; background-color: #ffffff; border-radius: 4px; visibility: hidden; z-index: 3;">
         </div>
+
+        <div class="music-player" style="position: absolute; bottom: 20px; right: 20px; z-index: 999; background: linear-gradient(135deg, #004d73, #001f33); padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3); cursor: pointer;" onclick="document.getElementById('audio-player').play()">
+            <span style="color: #00c6c6; font-size: 16px; font-weight: bold;">▶ 播放音乐</span>
+            <audio id="audio-player" src="music/index.mp3" type="audio/mp3" style="display: none;"></audio>
+        </div>
+        
+
+
     </div>
     
         
