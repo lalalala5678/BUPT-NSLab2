@@ -95,7 +95,7 @@
 
         <div class="music-player" style="position: absolute; bottom: 20px; right: 20px; z-index: 999; background: linear-gradient(135deg, #004d73, #001f33); padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3); cursor: pointer;" onclick="document.getElementById('audio-player').play()">
             <span style="color: #00c6c6; font-size: 16px; font-weight: bold;">▶ 播放音乐</span>
-            <audio id="audio-player" src="music/index.mp3" type="audio/mp3" style="display: none;"></audio>
+            <audio id="audio-player" src="music/index.mp3" type="audio/mp3" style="display: none;" autoplay="autoplay" loop="loop"></audio>
         </div>
         
 
