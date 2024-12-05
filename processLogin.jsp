@@ -13,6 +13,7 @@
         // 验证用户名和密码
         if (VALID_USERNAME.equals(userName) && VALID_PASSWORD.equals(password)) {
             // 保存用户名和密码到 Session
+            
             session.setAttribute("userName", userName);
             session.setAttribute("password", password);
 
@@ -21,6 +22,7 @@
             Cookie passwordCookie = new Cookie("password", password);
             userCookie.setMaxAge(60 * 60 * 24 * 7); // Cookie 有效期为 7 天
             passwordCookie.setMaxAge(60 * 60 * 24 * 7);
+
             response.addCookie(userCookie);
             response.addCookie(passwordCookie);
 

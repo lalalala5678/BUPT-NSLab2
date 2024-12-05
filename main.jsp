@@ -38,7 +38,7 @@
 <!-- 主题文字开始 -->
 
     
-<<div class="leftBox" id="leftBox" style="position: absolute; top: 100px; width: 30%; height: calc(100% - 120px); z-index: 2; transition: transform 0.8s; left: -2%;"> <!-- 整体右移，top增加了20px -->
+<div class="leftBox" id="leftBox" style="position: absolute; top: 100px; width: 30%; height: calc(100% - 120px); z-index: 2; transition: transform 0.8s; left: -2%;"> <!-- 整体右移，top增加了20px -->
     <div class="item" style="width: 100%; height: 30%; padding: 20px; margin-bottom: 40px; margin-top: 30px;"> <!-- 上下间距调整 -->
         <div class="border1" style="padding: 20px; background: linear-gradient(135deg, rgba(0, 77, 115, 0.1), rgba(0, 207, 207, 0.7), rgba(0, 77, 115, 0.1)); background-size: 500% 500%; animation: gradientBG 4s ease infinite; border-radius: 15px; border: 2px solid rgba(98, 112, 205, 0.5); height: 100%; margin-left: 10px;"> <!-- 增加渐变幅度 -->
             <div class="title" style="font-size: 18px; color: #00ff80; font-weight: bold; text-align: center; margin-bottom: 10px;">文化遗产</div>
